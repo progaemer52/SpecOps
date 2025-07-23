@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "task": "Read recent unread email",
+      "description": "Retrieve and display the most recent unread email in the inbox"
+    },
+    {
+      "id": 2,
+      "task": "Find emails by criteria",
+      "description": "Search emails using various filters (sender, keywords, time range, attachments, subject)"
+    },
+    {
+      "id": 4,
+      "task": "Compose and send email",
+      "description": "Create a new email with specified recipients, subject, and body, then send it"
+    },
+    {
+      "id": 5,
+      "task": "Create draft email",
+      "description": "Compose an email and save it as a draft without sending"
+    },
+    {
+      "id": 6,
+      "task": "Send email with attachment",
+      "description": "Compose an email with file attachment(s) and send it"
+    },
+    {
+      "id": 7,
+      "task": "Schedule future email",
+      "description": "Create an email to be automatically sent at a specified future time"
+    },
+    {
+      "id": 8,
+      "task": "Display email content and metadata",
+      "description": "Show the full content and metadata of a specific email including attachments"
+    },
+    {
+      "id": 9,
+      "task": "Reply to email",
+      "description": "Compose and send a reply to a specific email"
+    },
+    {
+      "id": 10,
+      "task": "Forward email",
+      "description": "Forward a specific email to new recipient(s)"
+    },
+    {
+      "id": 11,
+      "task": "Create email with multiple recipients",
+      "description": "Send to primary, CC, and BCC recipients"
+    },
+    {
+      "id": 12,
+      "task": "Organize emails",
+      "description": "Move emails between folders, apply labels, or flag emails as important"
+    },
+    {
+      "id": 13,
+      "task": "Delete email",
+      "description": "Remove a specific email from the current folder"
+    },
+    {
+      "id": 15,
+      "task": "Download attachments",
+      "description": "Download all attachments from a specific email"
+    },
+    {
+      "id": 16,
+      "task": "Create formatted email",
+      "description": "Compose an email with formatting (bold, italic, lists)"
+    },
+    {
+      "id": 17,
+        "task": "Create email with links",
+        "description": "Compose an email with hyperlinks"
+    } ,
+    {
+    "id": 19,
+    "task": "Translate email content",
+    "description": "Translate the content of an email to a different language"
+    },
+    {
+      "id": 20,
+      "task": "Create email with table",
+      "description": "Compose an email with a table"
+    }
+  ]

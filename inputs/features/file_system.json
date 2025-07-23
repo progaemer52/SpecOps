@@ -1,0 +1,102 @@
+[
+    {
+        "id": 2,
+        "task": "Advanced file listing",
+        "description": "List files with specific attributes (size, date modified)"
+    },
+    {
+        "id": 3,
+        "task": "Find files by name",
+        "description": "Locate a specific file by its name"
+    },
+    {
+        "id": 6,
+        "task": "View file content",
+        "description": "Display the contents of a text file"
+    },
+    {
+        "id": 8,
+        "task": "Extract patterns",
+        "description": "Extract content matching specific patterns (e.g., regex)"
+    },
+    {
+        "id": 12,
+        "task": "Create file with content",
+        "description": "Create a new file with specified text content"
+    },
+    {
+        "id": 14,
+        "task": "Create nested directories",
+        "description": "Create a directory structure with multiple levels"
+    },
+    {
+        "id": 16,
+        "task": "Create backup",
+        "description": "Create a backup copy with timestamp in filename"
+    },
+    {
+        "id": 17,
+        "task": "Rename file",
+        "description": "Change a file's name"
+    },
+    {
+        "id": 21,
+        "task": "Insert content",
+        "description": "Add text at a specific location in a file"
+    },
+    {
+        "id": 23,
+        "task": "Change permissions",
+        "description": "Modify file access permissions"
+    },
+    {
+        "id": 26,
+        "task": "Delete multiple files",
+        "description": "Remove files matching certain criteria"
+    },
+    {
+        "id": 27,
+        "task": "Delete empty directory",
+        "description": "Remove an empty folder"
+    },
+    {
+        "id": 33,
+        "task": "Archive files",
+        "description": "Compress files/directories into archives (zip, tar)"
+    },
+    {
+        "id": 44,
+        "task": "Semantic file filtering",
+        "description": "Filter files based on natural language description of content meaning"
+    },
+    {
+        "id": 46,
+        "task": "Multi-file pattern counting",
+        "description": "Calculate total lines containing specific words/patterns across multiple files"
+    },
+    {
+        "id": 47,
+        "task": "Cross-file data processing",
+        "description": "Process numerical data across multiple files (sums, averages, etc.)"
+    },
+    {
+        "id": 49,
+        "task": "Directory disk usage",
+        "description": "Measure disk usage of directories"
+    },
+    {
+        "id": 55,
+        "task": "File execution and capture",
+        "description": "Execute and capture output from specific files"
+    },
+    {
+        "id": 60,
+        "task": "Pattern-based structure copy",
+        "description": "Copy files by pattern while maintaining directory structure"
+    },
+    {
+        "id": 62,
+        "task": "Directory structure duplication",
+        "description": "Copy an entire directory structure from one location to another"
+    }
+]
