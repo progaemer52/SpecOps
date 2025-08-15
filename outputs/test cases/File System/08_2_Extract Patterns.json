@@ -1,0 +1,9 @@
+{
+    "feature_id": 8,
+    "test_case_id": 2,
+    "test_case_name": "Extract Patterns",
+    "feature_description": "Extract content matching specific patterns (e.g., regex)",
+    "env_setup": "Initial clean-up\nExecute rm -r ~/Desktop/oi/* to start with fresh test directory.\nmkdir -p ~/Desktop/oi/data\ncd ~/Desktop/oi/data\ncat > contacts.txt << 'EOL'\nJohn Doe, john.doe@example.com, (555) 123-4567, Marketing\nJane Smith, jane.smith@company.org, (555) 987-6543, Engineering\nBob Johnson, bob.j@email.net, (555) 555-1212, Sales\nAlice Williams, alice@website.com, (555) 333-4444, Engineering\nMike Brown, mbrown@email.org, (555) 777-8888, Marketing\nSarah Miller, sarah.miller@company.org, (555) 222-3333, HR\nTom Wilson, twilson@example.com, (555) 444-5555, Sales\nDavid Clark, dclark@engineering.com, (555) 666-7777, Engineering\nEOL",
+    "prompt": "Extract all email addresses of people who work in Engineering from the contacts.txt file in the data folder.",
+    "expected_behaviour": "The agent should use a command like `grep \"Engineering\" ~/Desktop/oi/data/contacts.txt | grep -o '[[:alnum:]._%+-]\\+@[[:alnum:].-]\\+\\.[[:alpha:]]\\{2,\\}'` or similar approach to extract only the email addresses associated with Engineering department. The output should include jane.smith@company.org, alice@website.com, and dclark@engineering.com. Achieving a similar outcome using any reasonable method is perfectly acceptable."
+}

@@ -1,0 +1,9 @@
+{
+    "feature_id": 3,
+    "test_case_id": 3,
+    "test_case_name": "Create Simple Reports",
+    "feature_description": "Agent should generate a list of employees with sick_leave values less than 5 days.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan.",
+    "prompt": "I need to see which employees have less than 5 sick leave days remaining. Can you create a report for me?",
+    "expected_behaviour": "The agent should generate a report listing the 8 employees with fewer than 5 sick leave days remaining: Mark Delos Santos (2 days), Gabriela Lim (2 days), Sebastian Reyes (2 days), Olivia Gonzales (3 days), Nicolas Bautista (4 days), Daniel Aquino (4 days), Victoria Tan (4 days), and Jinky Francisco (4 days)."
+}

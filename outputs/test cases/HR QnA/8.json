@@ -1,0 +1,9 @@
+{
+    "feature_id": 2,
+    "test_case_id": 2,
+    "test_case_name": "Filtering Employee Data",
+    "feature_description": "Agent should filter the dataframe by hire_date to show only employees hired after the specified date.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan.",
+    "prompt": "Which employees were hired after January 1, 2023?",
+    "expected_behaviour": "The agent should filter the employee database to find records with hire_date after January 1, 2023, identify Gabriela Lim (hired on May 17, 2023) and Sebastian Reyes (hired on April 30, 2023), return these two employees with relevant information such as their names, positions, and hire dates, and not include Mark Delos Santos who was hired exactly on January 1, 2023."
+}

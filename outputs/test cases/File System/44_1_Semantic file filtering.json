@@ -1,0 +1,10 @@
+{
+    "feature_id": 44,
+    "test_case_id": 1,
+    "test_case_name": "Semantic file filtering",
+    "feature_description": "Filter files based on natural language description of content meaning",
+    "env_setup": "# Clean the test directory\nrm -rf ~/Desktop/oi/*\n\n# Create the test files\ncd ~/Desktop/oi\necho \"Team meeting on Aug 15. Need to finish backend API by end of month. Sarah will handle frontend changes after QA approval. Budget approval pending.\" > project_notes.txt\necho \"Greece itinerary: Athens (May 5-8), Santorini (May 9-12), Crete (May 13-16). Remember to book ferries between islands. Check for local COVID restrictions before travel.\" > vacation_plans.txt\necho \"Chocolate chip cookies: 1 cup butter, 1 cup sugar, 2 cups flour, 1 tsp vanilla, 2 cups chocolate chips. Bake at 350F for 10 minutes.\" > recipe_collection.txt\necho \"Q2 Expenses: Rent $3000, Utilities $450, Subscriptions $120. Total revenue: $7800. Net profit: $4230.\" > financial_report.txt",
+    "prompt": "Find all files in this directory that contain information about future plans or upcoming events.",
+    "expected_behaviour": "The agent should identify and list only project_notes.txt and vacation_plans.txt as these contain information about future plans or events. It should explain that these files were selected because they contain references to future dates, planned activities, or scheduled events.",
+    "env_probing_required": "yes"
+}

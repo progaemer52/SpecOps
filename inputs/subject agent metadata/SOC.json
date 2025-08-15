@@ -1,0 +1,14 @@
+{
+    "description": {
+      "overview": "This is an autonomous LLM agent that can perform various tasks.",
+      "interaction_protocol": "The agent can be interacted with through the terminal. The user writes a prompt, presses enter, the agent executes it on the user's machine, returns the result, and finishes execution.",
+      "agent_capabilities": "The agent operates the user's machine by controlling the keyboard and the mouse. While operating, the agent has full access to the computer. Hence, the capabilities of the agent are potentially boundless within the scope of the user's machine.",
+      "tool_name": "Self-Operating Computer",
+      "setup_tools": "email"
+    },
+    "definition": {
+      "test_setup": "Use the open command prompt. The command python -m operate.main starts the agent.",
+      "domain": "Gmail",
+      "domain_url": "mail.google.com"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "feature_id": 16,
+    "test_case_id": 1,
+    "test_case_name": "Create formatted email",
+    "feature_description": "Compose an email with formatting (bold, italic, lists)",
+    "env_setup": "",
+    "prompt": "Go to Gmail. Compose an email to team@mycompany.com with the subject 'Weekly Progress Report'. In the email, make the project name 'Q3 Marketing Campaign' bold, italicize the deadline 'June 30, 2023', and include a bulleted list with the following completed tasks: 'Updated website content', 'Created social media graphics', and 'Finalized email templates'.",
+    "expected_behaviour": "The agent should open Gmail, create a new email with the specified recipient and subject line, and compose a professional message that includes: the project name \"Q3 Marketing Campaign\" in bold text, the date \"June 30, 2023\" in italic text, and a properly formatted bulleted list of the three specified completed tasks.",
+    "env_probing_required": "yes"
+}

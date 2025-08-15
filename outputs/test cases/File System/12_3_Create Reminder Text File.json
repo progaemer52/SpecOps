@@ -1,0 +1,9 @@
+{
+    "feature_id": 12,
+    "test_case_id": 3,
+    "test_case_name": "Create Reminder Text File",
+    "feature_description": "Create a new file with specified text content",
+    "env_setup": "Initial clean-up\nExecute rm -r ~/Desktop/oi/* to start with fresh test directory.\nmkdir -p ~/Desktop/oi/Notes\ncd ~/Desktop/oi/Notes\nrm -f reminder.txt",
+    "prompt": "Create a file called reminder.txt in the Notes folder inside my oi directory with the following text: Remember to submit the quarterly report by Friday and call back client John regarding the project proposal. Also, buy groceries on the way home.",
+    "expected_behaviour": "The agent should navigate to the ~/Desktop/oi/Notes directory, create a new file named \"reminder.txt\", and populate it with exactly the specified text content. It should use appropriate commands to write the content and confirm successful creation. Achieving a similar outcome using any reasonable method is perfectly acceptable."
+}

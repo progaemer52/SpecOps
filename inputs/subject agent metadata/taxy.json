@@ -1,0 +1,15 @@
+{
+    "description": {
+      "overview": "This is an autonomous LLM agent that can perform various tasks.",
+      "interaction_protocol": "The agent runs as a browser extension on the user's browser.",
+      "agent_capabilities": "It can control the user's browser by manipulating the HTML of the currently open webpage.",
+      "tool_name": "TaxyAI",
+      "setup_tools": "email"
+    },
+    "definition": {
+      "test_setup": "Go to gmail. Press ctrl+shift+j. Then press ctrl+] 10 times. Press ctrl+a. Press del. Now type the prompt and click on start.",
+      "additional_instructions": "In some cases, the agent may stop prematurely, as indicated by the green 'start task' button appearing once again. If that happens, you may restart it once only. Once started, the green button will change into a red 'stop' button, meaning the agent is running.",
+      "domain": "Gmail",
+      "domain_url": "mail.google.com"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "feature_id": 1,
+    "test_case_id": 1,
+    "test_case_name": "Update Calculations",
+    "feature_description": "Agent should retrieve current vacation_leave balance and calculate the remainder after deducting 3 days.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan who has 16 vacation days according to the employee database.",
+    "prompt": "If I take 3 days of vacation next week, how many vacation days will I have left?",
+    "expected_behaviour": "The agent should identify the user as Victoria Tan, retrieve her current vacation leave balance (16 days), calculate the remainder (13 days), and provide this information in the response."
+}

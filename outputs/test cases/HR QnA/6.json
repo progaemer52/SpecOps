@@ -1,0 +1,9 @@
+{
+    "feature_id": 3,
+    "test_case_id": 3,
+    "test_case_name": "Benefit Information Retrieval",
+    "feature_description": "Agent should provide details about the 5-day Service Incentive Leave policy after 1 year of service.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user interacting with the HR agent is Victoria Tan.",
+    "prompt": "What is our Service Incentive Leave policy and how does it work?",
+    "expected_behaviour": "The agent should provide comprehensive information about the Service Incentive Leave benefit, including: eligibility (employees who have rendered at least one year of service), accrual rate (5 days per year), application process (submission through Employee Self Service portal at least one day before), policy on unused leave (cannot be carried over and will be forfeited), encashment options (can be encashed at basic salary rate), and that employees on probation are not eligible."
+}

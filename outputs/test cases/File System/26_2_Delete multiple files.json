@@ -1,0 +1,10 @@
+{
+    "feature_id": 26,
+    "test_case_id": 2,
+    "test_case_name": "Delete multiple files",
+    "feature_description": "Remove files matching certain criteria",
+    "env_setup": "Initial clean-up\nExecute rm -r ~/Desktop/oi/* to start with fresh test directory.\nmkdir -p ~/Desktop/oi/project/temp\ncd ~/Desktop/oi/project/temp\ntouch temp_1.log temp_2.log temp_3.log\necho '{\"settings\": \"test\"}' > config.json\necho \"Important project notes\" > notes.txt",
+    "prompt": "Delete all log files in the project/temp directory.",
+    "expected_behaviour": "The agent should identify all files with .log extension in ~/Desktop/oi/project/temp, delete only these log files using an appropriate command (such as navigating to the directory and using `rm *.log`), and confirm the deletion. The config.json and notes.txt files should remain untouched. Achieving a similar outcome using any reasonable method is perfectly acceptable.",
+    "env_probing_required": "yes"
+}

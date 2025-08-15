@@ -1,0 +1,11 @@
+{
+    "description": {
+      "overview": "This is an autonomous LLM agent that is a friendly HR assistant. It can assist the user on questions related to HR.",
+      "interaction_protocol": "The agent can be interacted with through the browser in its website. The website features a chat interface in the center. The user writes a prompt and clicks on send. The agent executes it and returns the result, and finishes execution.",
+      "agent_capabilities": "The agent can perform CRUD operations on the database. It can also handle HR related question answering regarding HR policies, timekeeping, etc.",
+       "tool_name": "Autonomous HR Chatbot"
+    },
+    "definition": {
+      "test_setup": "The agent is accessible at localhost:8501"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "feature_id": 1,
+    "test_case_id": 1,
+    "test_case_name": "Department Pay Statistics Calculation",
+    "feature_description": "Agent should perform multiple calculations on basic_pay_in_php and present results in a clear format.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan from the Sales Department.",
+    "prompt": "Can you tell me the total, average, and median basic pay for everyone in the Finance Department?",
+    "expected_behaviour": "The agent should query the database to identify Finance Department employees (Joseph Pe\u00f1a: \u20b120,000, Alexander Verdad: \u20b115,000, Richard Santos: \u20b130,000), calculate the requested statistics (Total: \u20b165,000, Average: \u20b121,666.67, Median: \u20b120,000), and present these results in a clear, organized format with appropriate labels."
+}

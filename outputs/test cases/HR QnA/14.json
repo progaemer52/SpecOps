@@ -1,0 +1,9 @@
+{
+    "feature_id": 2,
+    "test_case_id": 2,
+    "test_case_name": "Leave Eligibility Checking - Sabbatical Leave",
+    "feature_description": "Agent should check if user has 5+ years of service (from hire_date) as required by the sabbatical policy.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan with hire_date of 1/15/2022.",
+    "prompt": "Am I eligible for sabbatical leave?",
+    "expected_behaviour": "The agent should identify the user as Victoria Tan, check her hire_date (1/15/2022), calculate that she has less than 5 years of service (only about 1.5 years as of now), and inform her that she is not eligible for sabbatical leave according to the policy which requires 5+ years of continuous service."
+}

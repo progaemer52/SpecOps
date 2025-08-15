@@ -1,0 +1,9 @@
+{
+    "feature_id": 6,
+    "test_case_id": 3,
+    "test_case_name": "View file content",
+    "feature_description": "Display the contents of a text file",
+    "env_setup": "Initial clean-up\nExecute rm -r ~/Desktop/oi/* to start with fresh test directory.\ncat > ~/Desktop/oi/to_do_list.txt << 'EOF'\nTO-DO LIST:\n1. Email client about project changes\n2. Schedule team meeting for Friday\n3. Finish documentation for API\n4. Review pull requests\n5. Prepare quarterly report\nEOF",
+    "prompt": "Can you show me what's in the to-do list file?",
+    "expected_behaviour": "The agent should correctly identify the file to_do_list.txt in the current directory (~/Desktop/oi) and use the `cat` command to display its full contents, showing all five items on the list. Alternative acceptable behaviors include using commands like `less`, `more`, or `head -n 10` to display the file contents. Achieving a similar outcome using any reasonable method is perfectly acceptable."
+}

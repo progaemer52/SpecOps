@@ -1,0 +1,9 @@
+{
+    "feature_id": 1,
+    "test_case_id": 1,
+    "test_case_name": "Read Policy Documents",
+    "feature_description": "Agent should retrieve information about the 5-day bereavement leave policy for immediate family deaths.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan.",
+    "prompt": "What does our company policy say about bereavement leave?",
+    "expected_behaviour": "The agent should retrieve and present information about the bereavement leave policy, specifically mentioning that employees are entitled to 5 days of bereavement leave per year in the event of the death of an immediate family member (spouse, child, parent, sibling). It should also explain that applications must be submitted through the Employee Self Service portal, unused leave cannot be carried over or encashed, and employees on probation are also eligible for this leave."
+}

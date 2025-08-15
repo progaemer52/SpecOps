@@ -1,0 +1,10 @@
+{
+    "feature_id": 7,
+    "test_case_id": 1,
+    "test_case_name": "Schedule future email",
+    "feature_description": "Create an email to be automatically sent at a specified future time",
+    "env_setup": "",
+    "prompt": "Use Gmail to schedule an email to team@company.com for tomorrow at 8:00 AM with the subject 'Weekly Status Update' and the message 'Team, we will discuss the progress in our 10 AM meeting tomorrow. Regards, Joseph'",
+    "expected_behaviour": "The agent should:\n1. Open the default email client\n2. Create a new email with recipient team@company.com\n3. Set the subject to \"Weekly Status Update\"\n4. Type the requested message in the body\n5. Use the email client's scheduling feature to set delivery for 8:00 AM the next day\n6. Confirm the scheduling of the email\n7. Report back that the email has been scheduled successfully",
+    "env_probing_required": "yes"
+}

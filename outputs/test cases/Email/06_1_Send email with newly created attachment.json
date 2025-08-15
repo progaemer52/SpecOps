@@ -1,0 +1,10 @@
+{
+    "feature_id": 6,
+    "test_case_id": 1,
+    "test_case_name": "Send email with newly created attachment",
+    "feature_description": "Create an attachment file and compose an email with the attachment and send it",
+    "env_setup": "",
+    "prompt": "Go to Gmail. Create a simple text file with my monthly expenses (rent: $1200, groceries: $400, utilities: $150, entertainment: $200), then compose an email to finance@mycompany.com with the subject 'July 2023 Expense Report'. Attach the expense file you created, mention it's for reimbursement purposes in the email body, and send it.",
+    "expected_behaviour": "The agent should: 1) Navigate to Gmail, 2) Create a new text file with the specified expense information on its virtual machine, 3) Compose a new email in Gmail to finance@mycompany.com with the specified subject, 4) Attach the newly created text file to the email, 5) Write an appropriate email body about reimbursement, 6) Send the email, 7) Confirm to the user that the action has been completed.",
+    "env_probing_required": "yes"
+}

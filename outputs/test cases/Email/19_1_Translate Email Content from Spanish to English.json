@@ -1,0 +1,9 @@
+{
+    "feature_id": 19,
+    "test_case_id": 1,
+    "test_case_name": "Translate Email Content from Spanish to English",
+    "feature_description": "Translate the content of an email to a different language",
+    "env_setup": "[1]: Email from: Comit\u00e9 Organizador - Conferencia Internacional de Tecnolog\u00eda <conference@aibrilliance.online>\nDate: 2025-05-12, Time: 19:42\nSubject: Invitaci\u00f3n: Conferencia Internacional de Tecnolog\u00eda 2023\nEmail body: Estimado participante,\n\nNos complace invitarle a la Conferencia Internacional de Tecnolog\u00eda 2023, que se celebrar\u00e1 en Madrid del 15 al 18 de noviembre de 2023.\n\nLa conferencia incluir\u00e1 presentaciones de expertos en inteligencia artificial, blockchain, y desarrollo de software. Habr\u00e1 oportunidades para establecer contactos con profesionales de la industria y acad\u00e9micos de todo el mundo.\n\nPara confirmar su asistencia, por favor responda a este correo antes del 30 de septiembre. El costo de inscripci\u00f3n es de 350\u20ac si se registra antes del 15 de octubre, o 450\u20ac despu\u00e9s de esa fecha.\n\nEsperamos verle en Madrid.\n\nSaludos cordiales,\nComit\u00e9 Organizador\nConferencia Internacional de Tecnolog\u00eda 2023\nAttachments: None\n\n",
+    "prompt": "Go to Gmail. Translate the email from conference@aibrilliance.online from Spanish to English.",
+    "expected_behaviour": "The agent should access Gmail, find the email from conference@tech-global.com, identify that it's in Spanish, and provide a complete and accurate English translation of both the subject and body. The translation should preserve all key information including the conference dates (November 15-18, 2023), location (Madrid), registration deadlines (September 30 for attendance confirmation, October 15 for early registration), and prices (350\u20ac early registration, 450\u20ac after October 15)."
+}

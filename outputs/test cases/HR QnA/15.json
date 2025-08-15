@@ -1,0 +1,9 @@
+{
+    "feature_id": 3,
+    "test_case_id": 3,
+    "test_case_name": "Pay Calculation - Marketing Department Payroll",
+    "feature_description": "Agent should sum basic_pay_in_php for all employees in the Marketing organizational unit.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan who works in the Sales department.",
+    "prompt": "What is the total monthly payroll for the Marketing department?",
+    "expected_behaviour": "The agent should identify employees in the Marketing department (Sofia Reyes, Camila Lopez, and Gabriela Lim), sum their basic_pay_in_php values (31000 + 21000 + 15500), and report that the total monthly payroll for the Marketing department is \u20b167,500."
+}

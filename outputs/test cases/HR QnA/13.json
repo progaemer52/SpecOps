@@ -1,0 +1,9 @@
+{
+    "feature_id": 1,
+    "test_case_id": 1,
+    "test_case_name": "Status Reporting - Count Employees on Probation",
+    "feature_description": "Agent should count employees with \"Probation\" in their employment_status field.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan.",
+    "prompt": "How many employees are currently on probation?",
+    "expected_behaviour": "The agent should query the employment_status field in the database and report that there are 0 employees currently on probation since all employees in the database have \"Permanent\" status."
+}

@@ -1,0 +1,9 @@
+{
+    "feature_id": 2,
+    "test_case_id": 2,
+    "test_case_name": "Employee Data Lookup",
+    "feature_description": "Agent should identify the user and retrieve their sick leave balance from the employee dataframe.",
+    "env_setup": "The agent has access to employee database and HR policies. The user is Victoria Tan who has a sick leave balance of 4 days according to the employee database.",
+    "prompt": "What is my current sick leave balance?",
+    "expected_behaviour": "The agent should identify that the user is Victoria Tan and report that her sick leave balance is 4 days."
+}

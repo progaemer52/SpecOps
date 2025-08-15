@@ -1,0 +1,9 @@
+{
+    "feature_id": 2,
+    "test_case_id": 2,
+    "test_case_name": "Supervisor Identification",
+    "feature_description": "Agent should identify the user and retrieve their supervisor's name from the dataframe.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan (employee_id: 1005691) from the Sales Department.",
+    "prompt": "Who is my supervisor?",
+    "expected_behaviour": "The agent should recognize the current user as Victoria Tan, query the database to retrieve her supervisor information, and respond with 'Your supervisor is Valentina Dizon' based on the database relationship. The agent should not ask the user to specify who they are, as the system should have this context."
+}

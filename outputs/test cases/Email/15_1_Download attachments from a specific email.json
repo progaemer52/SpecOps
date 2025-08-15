@@ -1,0 +1,9 @@
+{
+    "feature_id": 15,
+    "test_case_id": 1,
+    "test_case_name": "Download attachments from a specific email",
+    "feature_description": "Download all attachments from a specific email",
+    "env_setup": "[1]: Email from: Project Management Team <project-team@aibrilliance.online>\nDate: 2025-05-12, Time: 17:46\nSubject: Project Documents for Review\nEmail body: Hello,\n\nPlease find attached the following documents for your review:\n1. project_timeline.txt\n2. budget_forecast.txt\n3. team_roles.txt\n\nPlease review these and provide feedback by Friday.\n\nBest regards,\nProject Management Team\nAttachments: project_timeline.txt, budget_forecast.txt, team_roles.txt\n\n",
+    "prompt": "Go to Gmail. Download all attachments from the email with subject 'Project Documents for Review' from project-team@aibrilliance.online.",
+    "expected_behaviour": "The agent should navigate to Gmail, find the email from project-team@company.com with the subject 'Project Documents for Review', identify all three attachments, and download them to its machine. The agent should confirm when the download is complete and indicate where the files have been saved."
+}

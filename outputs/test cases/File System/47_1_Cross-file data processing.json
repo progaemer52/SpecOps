@@ -1,0 +1,10 @@
+{
+    "feature_id": 47,
+    "test_case_id": 1,
+    "test_case_name": "Cross-file data processing",
+    "feature_description": "Process numerical data across multiple files (sums, averages, etc.)",
+    "env_setup": "# Clean the test directory\nrm -rf ~/Desktop/oi/*\n\n# Create test CSV files\nmkdir -p ~/Desktop/oi/sales_data\ncat > ~/Desktop/oi/sales_data/sales_q1.csv << 'EOF'\nMonth,Revenue\nJanuary,5000\nFebruary,5500\nMarch,6200\nEOF\n\ncat > ~/Desktop/oi/sales_data/sales_q2.csv << 'EOF'\nMonth,Revenue\nApril,6800\nMay,7100\nJune,7500\nEOF\n\ncat > ~/Desktop/oi/sales_data/sales_q3.csv << 'EOF'\nMonth,Revenue\nJuly,7200\nAugust,7800\nSeptember,8100\nEOF",
+    "prompt": "Can you analyze my quarterly sales data in the sales_data folder? I need to know the average monthly revenue across all quarters and which month had the highest sales.",
+    "expected_behaviour": "The agent should read all three CSV files from the sales_data folder, calculate the average monthly revenue (approximately 6800), and identify September as the month with the highest revenue (8100). The output should show the commands used to locate and analyze the files, and present the results in a clear format. These expectations directly relate to the prompt's request for analyzing quarterly sales data.",
+    "env_probing_required": "yes"
+}

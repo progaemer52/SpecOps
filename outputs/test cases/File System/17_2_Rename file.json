@@ -1,0 +1,10 @@
+{
+    "feature_id": 17,
+    "test_case_id": 2,
+    "test_case_name": "Rename file",
+    "feature_description": "Change a file's name",
+    "env_setup": "Initial clean-up\nExecute rm -r ~/Desktop/oi/* to start with fresh test directory.\nmkdir -p ~/Desktop/oi/Documents\necho \"This is my old resume content.\" > ~/Desktop/oi/Documents/old_resume.pdf",
+    "prompt": "Rename the file old_resume.pdf in ~/Desktop/oi/Documents folder to current_resume.pdf.",
+    "expected_behaviour": "The agent should rename old_resume.pdf to current_resume.pdf using the mv command. It should verify the operation was successful and confirm that the file has been renamed while remaining in the same directory with its content intact. Achieving a similar outcome using any reasonable method is perfectly acceptable.",
+    "env_probing_required": "yes"
+}

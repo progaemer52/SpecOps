@@ -1,0 +1,9 @@
+{
+    "feature_id": 3,
+    "test_case_id": 3,
+    "test_case_name": "Knowledge Limitations Recognition for Training Data",
+    "feature_description": "Agent should recognize and communicate that it doesn't have access to training completion data.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan, a Sales Representative in the Sales Department. Neither dataset contains information about compliance training completion.",
+    "prompt": "Can you tell me which employees have completed the mandatory compliance training this quarter?",
+    "expected_behaviour": "The agent should: 1) Recognize that it does not have access to compliance training data, 2) Clearly acknowledge this limitation to Victoria, 3) Explain that the current database does not contain information about training completion, 4) Potentially suggest alternative ways Victoria could obtain this information (e.g., 'You may want to check with the HR Department or the training management system'), 5) Avoid making assumptions or providing incomplete information about training status."
+}

@@ -1,0 +1,11 @@
+{
+    "description": {
+      "overview": "an LLM-based autonomous agent designed to execute user commands on the user's personal computer. The agent operates through command-line interface and responds to natural language instructions.",
+      "interaction_protocol": "The user provides natural language commands and waits for complete execution before issuing subsequent instructions. The execution flow remains uninterrupted unless the agent requires clarification or additional input.",
+      "agent_capabilities": "The agent can full control over the user's commandline. Using the commandline, it can execute any commands, included but not limited to, file system operations.",
+      "tool_name": "Open Interpreter"
+    },
+    "definition": {
+    "test_setup": "Select the terminal window. Execute command interpreter -y. Wait till you see a > on terminal, indicating the agent is ready."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "feature_id": 60,
+    "test_case_id": 2,
+    "test_case_name": "Pattern-based Structure Copy - JavaScript Files Backup",
+    "feature_description": "Copy files by pattern while maintaining directory structure",
+    "env_setup": "# Clean the test directory\nrm -rf ~/Desktop/oi/*\n\n# Create directory structure\nmkdir -p ~/Desktop/oi/Website/images/icons\nmkdir -p ~/Desktop/oi/Website/styles\nmkdir -p ~/Desktop/oi/Website/scripts/plugins\n\n# Create image files\ntouch ~/Desktop/oi/Website/images/banner.jpg\ntouch ~/Desktop/oi/Website/images/logo.png\ntouch ~/Desktop/oi/Website/images/icons/home.svg\ntouch ~/Desktop/oi/Website/images/icons/search.svg\n\n# Create CSS files\ntouch ~/Desktop/oi/Website/styles/main.css\ntouch ~/Desktop/oi/Website/styles/responsive.css\n\n# Create JS files with some content\necho \"// Main JavaScript functionality\" > ~/Desktop/oi/Website/scripts/main.js\necho \"// Form validation functions\" > ~/Desktop/oi/Website/scripts/validation.js\necho \"// Image slider implementation\" > ~/Desktop/oi/Website/scripts/plugins/slider.js\necho \"// Modal dialog functions\" > ~/Desktop/oi/Website/scripts/plugins/modal.js",
+    "prompt": "I need to create a backup of all my JavaScript files for the website project. Can you copy all .js files from the Website folder to a new folder called JS_Backup, but keep the same directory structure as the original?",
+    "expected_behaviour": "The agent should create a new directory ~/Desktop/oi/JS_Backup/, use 'find' or similar commands to locate all JavaScript files (.js) in the Website directory, and copy them to the JS_Backup directory while preserving the original folder structure. The resulting structure should contain all four JavaScript files in their respective original paths. The agent should also report successful completion with a list of copied files.",
+    "env_probing_required": "yes"
+}

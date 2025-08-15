@@ -1,0 +1,9 @@
+{
+    "feature_id": 3,
+    "test_case_id": 3,
+    "test_case_name": "Find Files by Name",
+    "feature_description": "Locate a specific file by its name",
+    "env_setup": "#Initial clean-up\nExecute rm -r ~/Desktop/oi/* to start with fresh test directory.\n# Navigate to the test directory\ncd ~/Desktop/oi\n# Create a nested directory structure\nmkdir -p projects/archived/2022\nmkdir -p projects/active/planning\nmkdir -p documents/reference\n# Place the target file in a nested location\necho \"Project Proposal Content\" > projects/archived/2022/project_proposal.pdf",
+    "prompt": "Can you help me find a PDF file called project_proposal.pdf? It should be somewhere in this directory structure but I can't remember where I put it.",
+    "expected_behaviour": "The agent should execute a search command like `find ~/Desktop/oi -name \"project_proposal.pdf\"` to locate the file. It should report that the file is located at ~/Desktop/oi/projects/archived/2022/project_proposal.pdf. Achieving a similar outcome using any reasonable method is perfectly acceptable."
+}

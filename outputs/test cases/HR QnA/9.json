@@ -1,0 +1,9 @@
+{
+    "feature_id": 3,
+    "test_case_id": 3,
+    "test_case_name": "Simple Data Analysis",
+    "feature_description": "Agent should calculate the mean of the sick_leave column in the employee dataframe.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan.",
+    "prompt": "What is the average sick leave balance across all employees?",
+    "expected_behaviour": "The agent should extract the sick_leave column values from the employee database, calculate the mean of these values (7.1 days), and return this result to the user in a clear format, stating that the average sick leave balance across all employees is 7.1 days. It may possibly provide additional context about sick leave policy if relevant."
+}

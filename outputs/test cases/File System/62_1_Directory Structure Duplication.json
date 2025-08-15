@@ -1,0 +1,10 @@
+{
+    "feature_id": 62,
+    "test_case_id": 1,
+    "test_case_name": "Directory Structure Duplication",
+    "feature_description": "Copy an entire directory structure from one location to another",
+    "env_setup": "# Clean the test directory\nrm -rf ~/Desktop/oi/*\n\n# Create source directory structure within ~/Desktop/oi\nmkdir -p ~/Desktop/oi/Projects/WebApp/src/css\nmkdir -p ~/Desktop/oi/Projects/WebApp/src/js/utils\nmkdir -p ~/Desktop/oi/Projects/WebApp/docs\n\n# Create some files with content to make the test more realistic\necho \"<html><body>Hello World</body></html>\" > ~/Desktop/oi/Projects/WebApp/src/index.html\necho \"body { font-family: Arial; }\" > ~/Desktop/oi/Projects/WebApp/src/css/style.css\necho \"function main() { console.log('Hello'); }\" > ~/Desktop/oi/Projects/WebApp/src/js/main.js\necho \"function helper() { return true; }\" > ~/Desktop/oi/Projects/WebApp/src/js/utils/helpers.js\necho \"# WebApp Documentation\" > ~/Desktop/oi/Projects/WebApp/docs/readme.md\necho '{\"version\": \"1.0\"}' > ~/Desktop/oi/Projects/WebApp/config.json\n\n# Create the destination parent directory\nmkdir -p ~/Desktop/oi/Backup",
+    "prompt": "I need to duplicate the entire WebApp folder from the Projects directory to my Backup directory. Please make sure all files and folders are copied with the same structure.",
+    "expected_behaviour": "The agent should successfully copy the entire directory structure from ~/Desktop/oi/Projects/WebApp to ~/Desktop/oi/Backup/WebApp, preserving all subdirectories and files. It should confirm the completion of the operation. The resulting structure in the destination location should be identical to the source, with all files containing the same content. The agent might use commands like 'cp -r' to perform this operation and should verify the copy was successful by showing the duplicated structure.",
+    "env_probing_required": "yes"
+}

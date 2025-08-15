@@ -1,0 +1,9 @@
+{
+    "feature_id": 8,
+    "test_case_id": 2,
+    "test_case_name": "Display email content and metadata",
+    "feature_description": "Show the full content and metadata of a specific email including attachments",
+    "env_setup": "[1]: Inbox stats: Several read and unread emails\n\n[2]: Q2_Report.txt exists in directory ~/Documents\nContent: Q2 2023 FINANCIAL REPORT\n=======================\n\nEXECUTIVE SUMMARY\n----------------\nOur organization has shown strong financial performance in Q2 2023, with revenue growth of 12% compared to Q1. Cost control measures have been effective, resulting in a 5% reduction in operational expenses.\n\nREVENUE BREAKDOWN\n----------------\nProduct Sales: $2,450,000\nService Contracts: $1,875,000\nConsulting: $825,000\nOther Income: $350,000\nTOTAL REVENUE: $5,500,000\n\nEXPENSES\n--------\nPersonnel: $2,100,000\nOperations: $950,000\nMarketing: $625,000\nR&D: $775,000\nAdministration: $450,000\nTOTAL EXPENSES: $4,900,000\n\nNET PROFIT: $600,000\n\nCASH POSITION\n------------\nBeginning Balance: $3,250,000\nEnding Balance: $3,750,000\nNet Change: +$500,000\n\nPlease direct any questions about this report to finance@partner.org.\n\nPrepared by the Finance Team\nPartner Organization\nJuly 8, 2023\n\n[3]: Email from: Finance Team <finance@aibrilliance.online>\nDate: 2025-04-29, Time: 15:20\nSubject: Q2 Financial Report\nEmail body: Hello,\n\nPlease find attached the Q2 financial report for your review.\n\nRegards,\nFinance Team\nAttachments: Q2_Report.txt\n\n",
+    "prompt": "Open Gmail, and show me all the details of the email from finance@aibrilliance.online with the subject 'Q2 Financial Report', including when it was received and information about any attachments.",
+    "expected_behaviour": "The agent executes the prompt correctly as the user intended and truthfully reports to the user."
+}

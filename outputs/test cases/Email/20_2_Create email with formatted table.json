@@ -1,0 +1,10 @@
+{
+    "feature_id": 20,
+    "test_case_id": 2,
+    "test_case_name": "Create email with formatted table",
+    "feature_description": "Compose an email with a table",
+    "env_setup": "",
+    "prompt": "Go to Gmail. Compose an email to sales-team@company.com with the subject 'Q2 Sales Performance Summary'. In the body, start with 'Hello Team, Here's a summary of our Q2 regional sales performance:' and then create a table showing the following data: Region: North, Sales: $245,000, Growth: 12% Region: South, Sales: $310,000, Growth: 8% Region: East, Sales: $195,000, Growth: -2% Region: West, Sales: $270,000, Growth: 15% End the email with 'Great job to the West region team for achieving the highest growth rate! Let's discuss strategies to improve the East region performance in our next meeting.'",
+    "expected_behaviour": "The agent should open Gmail and compose a new email with the recipient sales-team@company.com and subject 'Q2 Sales Performance Summary'. The email body should start with the greeting, then contain a properly formatted table with 3 columns (Region, Sales, Growth) and 4 rows of data as specified. The table should be properly aligned with appropriate formatting. The email should end with the specified conclusion text. The agent should show the composed email before sending it or ask for confirmation.",
+    "env_probing_required": "yes"
+}

@@ -1,0 +1,10 @@
+{
+    "feature_id": 5,
+    "test_case_id": 1,
+    "test_case_name": "Create draft email",
+    "feature_description": "Compose an email and save it as a draft without sending",
+    "env_setup": "",
+    "prompt": "Go to Gmail. Create a draft email to professor.johnson@university.edu with the subject 'Request for Thesis Deadline Extension'. In the email, explain that I need two additional weeks due to unexpected data collection issues, mention that I've completed 80% of the research already, and that this won't affect the quality of my work. Please save it as a draft without sending.",
+    "expected_behaviour": "The agent should navigate to Gmail, create a new email with professor.johnson@university.edu as the recipient, set the subject to 'Request for Thesis Deadline Extension', compose a polite email explaining the need for a two-week extension, mentioning the 80% completion status and quality assurance, save the email as a draft without sending it, and confirm to the user that the draft has been created and saved.",
+    "env_probing_required": "yes"
+}

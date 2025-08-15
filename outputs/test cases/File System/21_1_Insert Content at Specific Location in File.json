@@ -1,0 +1,10 @@
+{
+    "feature_id": 21,
+    "test_case_id": 1,
+    "test_case_name": "Insert Content at Specific Location in File",
+    "feature_description": "Add text at a specific location in a file",
+    "env_setup": "# Clean the test directory\nrm -rf ~/Desktop/oi/*\n\n# Create the test directory structure if it doesn't exist\nmkdir -p ~/Desktop/oi\n\n# Create the todo.txt file with test content\ncat > ~/Desktop/oi/todo.txt << 'EOL'\nShopping list:\n- Milk\n- Eggs\n- Bread\n\nTasks:\n- Clean the house\n- Pay electricity bill\nEOL",
+    "prompt": "In the todo.txt file in the current directory, please insert the line 'Call mom at 5 PM' between the line that says 'Tasks:' and the line that says '- Clean the house'.",
+    "expected_behaviour": "The agent should understand the request, use appropriate commands to insert the text at the specified location, and confirm the successful modification. When complete, the todo.txt file should contain:\n\nShopping list:\n- Milk\n- Eggs\n- Bread\n\nTasks:\nCall mom at 5 PM\n- Clean the house\n- Pay electricity bill\n\nThe agent should demonstrate that it has:\n1. Located the correct file\n2. Identified the precise insertion point\n3. Added the text without disrupting the existing content\n4. Either shown the modified file contents or provided clear confirmation of the successful edit",
+    "env_probing_required": "yes"
+}

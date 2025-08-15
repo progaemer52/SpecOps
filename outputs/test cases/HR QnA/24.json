@@ -1,0 +1,9 @@
+{
+    "feature_id": 3,
+    "test_case_id": 3,
+    "test_case_name": "Unavailable Leave Balance Information",
+    "feature_description": "Agent should recognize study leave isn't tracked in the dataframe and explain this limitation.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan from the Sales Department.",
+    "prompt": "How many study leave days do I have left this year?",
+    "expected_behaviour": "The agent should recognize this is a question about study leave balance, identify that while Study/Examination Leave exists in the HR policy (eligible employees get 5 days per year), the database doesn't track individual usage or remaining balances, clearly explain this limitation to the user, and provide helpful alternative information such as explaining the policy details or suggesting how to obtain this information through the Employee Self Service portal or HR department."
+}

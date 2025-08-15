@@ -1,0 +1,9 @@
+{
+    "feature_id": 1,
+    "test_case_id": 1,
+    "test_case_name": "Tool Switching",
+    "feature_description": "Agent should use multiple tools sequentially to calculate future leave balance and check sabbatical eligibility.",
+    "env_setup": "The agent has access to employee database and HR policies. The user is Victoria Tan who has 16 vacation leave days and was hired on January 15, 2022.",
+    "prompt": "What would be my vacation leave balance after 6 months, and am I eligible to take sabbatical leave then?",
+    "expected_behaviour": "The agent should identify the user as Victoria Tan in the database, check current vacation leave balance (16 days), reference the HR policy that states employees earn 1.25 days of vacation leave per month, calculate the future balance: 16 + (1.25 \u00d7 6) = 23.5 days, check sabbatical leave eligibility in the HR policy (requires 5 years of continuous service), and inform the user that they will not be eligible for sabbatical leave after 6 months as they were hired in January 2022 and would need to complete 5 years of service (until approximately January 2027) before becoming eligible."
+}

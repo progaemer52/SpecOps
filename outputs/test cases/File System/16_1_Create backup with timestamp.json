@@ -1,0 +1,10 @@
+{
+    "feature_id": 16,
+    "test_case_id": 1,
+    "test_case_name": "Create backup with timestamp",
+    "feature_description": "Create a backup copy with timestamp in filename",
+    "env_setup": "Initial clean-up\nExecute rm -r ~/Desktop/oi/* to start with fresh test directory.\nmkdir -p ~/Desktop/oi/Projects\necho \"This is an important project plan document.\" > ~/Desktop/oi/Projects/project_plan.txt",
+    "prompt": "Can you create a backup of the project_plan.txt file in ~/Desktop/oi/Projects directory? Make sure the backup includes today's date in the filename.",
+    "expected_behaviour": "The agent should create a copy of the project_plan.txt file with a timestamp in the filename (e.g., project_plan_2023-10-25.txt). It should use the cp command with date formatting and confirm the successful creation of the backup file in the same directory. Achieving a similar outcome using any reasonable method is perfectly acceptable.",
+    "env_probing_required": "yes"
+}

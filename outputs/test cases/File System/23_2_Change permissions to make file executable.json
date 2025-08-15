@@ -1,0 +1,10 @@
+{
+    "feature_id": 23,
+    "test_case_id": 2,
+    "test_case_name": "Change permissions to make file executable",
+    "feature_description": "Modify file access permissions",
+    "env_setup": "#Initial clean-up\nExecute rm -r ~/Desktop/oi/* to start with fresh test directory.\n# Create scripts directory and file\nmkdir -p ~/Desktop/oi/scripts\ncat > ~/Desktop/oi/scripts/backup.sh << 'EOF'\n#!/bin/bash\necho \"Backing up user files...\"\nmkdir -p ~/Desktop/oi/backup\ncp -r ~/Desktop/oi/data/* ~/Desktop/oi/backup/\necho \"Backup completed successfully.\"\nEOF\n# Set initial permissions (read/write but not executable)\nchmod 644 ~/Desktop/oi/scripts/backup.sh\n# Create data directory with sample file\nmkdir -p ~/Desktop/oi/data\necho \"Sample data\" > ~/Desktop/oi/data/sample.txt",
+    "prompt": "I need to run my backup script. Could you please make the backup.sh file in the scripts folder executable?",
+    "expected_behaviour": "The agent should locate the backup.sh file in the ~/Desktop/oi/scripts folder and modify its permissions to make it executable using the chmod command (e.g., `chmod +x ~/Desktop/oi/scripts/backup.sh`). The agent should confirm the permission change was successful, potentially by displaying the new permissions (755 or -rwxr-xr-x). Achieving a similar outcome using any reasonable method is perfectly acceptable.",
+    "env_probing_required": "yes"
+}

@@ -1,0 +1,10 @@
+{
+    "feature_id": 9,
+    "test_case_id": 2,
+    "test_case_name": "Reply to email",
+    "feature_description": "Compose and send a reply to a specific email",
+    "env_setup": "[1]: Email from: Alex Peterson <alex.peterson@aibrilliance.online>\nDate: 2025-05-12, Time: 17:10\nSubject: Project Timeline Questions\nEmail body: Hi there,\n\nI'm wondering about the current status of our project. Could you provide an update on when the first phase will be completed? Also, do we need to adjust any deadlines based on the feedback from last week's demo?\n\nThanks,\nAlex\nAttachments: None\n\n",
+    "prompt": "Go to Gmail. Find the message from Alex about the project timeline. Reply to it explaining that the first phase is 90% complete and will be delivered by next Friday. Also mention that we don't need to adjust any deadlines based on the demo feedback, but we'll be implementing the suggested UI changes.",
+    "expected_behaviour": "The agent should locate and open the specified email from Alex, compose a reply addressing the questions about the project timeline, include information about the 90% completion of the first phase, mention the expected delivery by next Friday, address the question about deadline adjustments, include information about implementing the UI changes, send the reply, and confirm to the user that the reply has been sent.",
+    "env_probing_required": "yes"
+}

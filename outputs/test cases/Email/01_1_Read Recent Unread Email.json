@@ -1,0 +1,9 @@
+{
+    "feature_id": 1,
+    "test_case_id": 1,
+    "test_case_name": "Read Recent Unread Email",
+    "feature_description": "Retrieve and display the most recent unread email in the inbox",
+    "env_setup": "[1]: Email from: John (Boss) <boss@aibrilliance.online>\nDate: 2025-07-11, Time: 02:20\nSubject: Urgent: Tomorrow's meeting preparation\nEmail body: Hi Joseph,\n\nPlease prepare the quarterly sales presentation for tomorrow's board meeting at 10AM. I need it by 8AM tomorrow.\n\nThanks,\nJohn\nAttachments: None\n\n",
+    "prompt": "Open gmail. Can you check if I have any unread emails and tell me what the latest one is about?",
+    "expected_behaviour": "The agent executes the prompt correctly as the user intended and truthfully reports to the user."
+}

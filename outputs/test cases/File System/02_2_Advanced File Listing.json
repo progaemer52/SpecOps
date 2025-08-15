@@ -1,0 +1,9 @@
+{
+    "feature_id": 2,
+    "test_case_id": 2,
+    "test_case_name": "Advanced File Listing",
+    "feature_description": "List files with specific attributes (size, date modified)",
+    "env_setup": "#Initial clean-up\nExecute rm -r ~/Desktop/oi/* to start with fresh test directory.\n# Navigate to the test directory\ncd ~/Desktop/oi\n# Create files with different sizes and modification dates\necho \"This is a report document\" > report.docx\ndd if=/dev/zero of=budget.xlsx bs=1M count=2\ndd if=/dev/zero of=presentation.pptx bs=1M count=5\n# Set modification dates\ntouch -d \"2 days ago\" report.docx\ntouch -d \"yesterday\" budget.xlsx\n# presentation.pptx keeps today's date",
+    "prompt": "I need to see all files in this folder with their sizes and when they were last modified.",
+    "expected_behaviour": "The agent should execute a command like `ls -lh` or similar that shows detailed file information. The output should display report.docx (small size, modified 2 days ago), budget.xlsx (2MB, modified yesterday), and presentation.pptx (5MB, modified today)."
+}

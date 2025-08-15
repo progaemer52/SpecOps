@@ -1,0 +1,9 @@
+{
+    "feature_id": 2,
+    "test_case_id": 2,
+    "test_case_name": "Data Transformation - Salary Analysis by Rank",
+    "feature_description": "Agent should group dataframe by rank and calculate mean basic_pay_in_php for each group.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user appears as Victoria Tan in the employee database.",
+    "prompt": "I need to analyze salary distribution by employee level. Can you group all employees by rank and show me the average basic pay for each group?",
+    "expected_behaviour": "The agent should group employees into the three ranks present in the data (Manager, Supervisor, and Rank and File), calculate the average basic_pay_in_php for each rank, and present results showing that Managers earn an average of approximately 31,200 PHP, Supervisors earn an average of approximately 20,700 PHP, and Rank and File employees earn an average of approximately 16,000 PHP. The results should be presented in a clear, readable format."
+}

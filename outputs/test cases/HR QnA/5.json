@@ -1,0 +1,9 @@
+{
+    "feature_id": 2,
+    "test_case_id": 2,
+    "test_case_name": "Policy Explanation",
+    "feature_description": "Agent should retrieve and explain paternity, maternity, adoption, and single parent leave policies.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user interacting with the HR agent is Victoria Tan.",
+    "prompt": "Can you explain the different types of parental leave available in our company?",
+    "expected_behaviour": "The agent should retrieve and explain the four parental-related leave policies: Paternity Leave (7 days for male employees, up to 4 instances), Maternity Leave (105 days for female employees, up to 2 instances), Adoption Leave (30 days once during employment), and Single Parent Leave (7 days annually). The explanation should include eligibility criteria, application process, and rules regarding unused leave for each type."
+}

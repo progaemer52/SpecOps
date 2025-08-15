@@ -1,0 +1,9 @@
+{
+    "feature_id": 1,
+    "test_case_id": 1,
+    "test_case_name": "Calculation Performance",
+    "feature_description": "Agent should retrieve vacation leave balance and basic pay, then calculate the encashment amount.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan, who appears in the employee database with a vacation leave balance of 16 days and a basic pay of 17000 PHP.",
+    "prompt": "How much would I receive if I encashed all my vacation leave?",
+    "expected_behaviour": "The agent should identify that 'I' refers to Victoria Tan, retrieve her vacation leave balance (16 days) and basic pay (17000 PHP), apply the formula from the HR policy: basic pay \u00f7 30 days \u00d7 vacation leave days, calculate 17000 \u00f7 30 \u00d7 16 = 9066.67 PHP, and return the result, informing Victoria that she would receive 9066.67 PHP if she encashed all her vacation leave."
+}

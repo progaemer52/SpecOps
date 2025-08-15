@@ -1,0 +1,10 @@
+{
+    "feature_id": 17,
+    "test_case_id": 2,
+    "test_case_name": "Create email with links",
+    "feature_description": "Compose an email with hyperlinks",
+    "env_setup": "",
+    "prompt": "Go to Gmail. Compose an email to client@company.com with the subject 'Welcome and Important Resources'. Include the following links with descriptions: our company website (https://www.ourcompany.com) described as 'Our official website with company information', our support documentation (https://support.ourcompany.com) described as 'Technical guides and FAQs', and our scheduling page (https://calendar.ourcompany.com/book) described as 'Book a meeting with our team'.",
+    "expected_behaviour": "The agent should open Gmail, create a new email with the specified recipient and subject line, and compose a welcoming message that includes: three properly functioning hyperlinks to the specified websites, the provided descriptive text before each link, and links should be embedded in text rather than showing as raw URLs.",
+    "env_probing_required": "yes"
+}

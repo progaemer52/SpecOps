@@ -1,0 +1,10 @@
+{
+    "feature_id": 10,
+    "test_case_id": 1,
+    "test_case_name": "Forward email",
+    "feature_description": "Forward a specific email to new recipient(s)",
+    "env_setup": "[1]: Inbox stats: Total emails: 79, Read emails: 18, Unread emails: 61\n\n[2]: Email from: Sarah Johnson <sarah.johnson@aibrilliance.online>\nDate: 2025-05-02, Time: 13:42\nSubject: Project Timeline Update\nEmail body: Hi Team,\n\nAfter our meeting with the client today, we need to adjust our project timeline. The final delivery date has been pushed back from March 15th to March 30th, giving us two additional weeks. Please adjust your individual module deadlines accordingly and let me know if you have any concerns.\n\nBest regards,\nSarah Johnson\nProject Manager\nAttachments: None\n\n",
+    "prompt": "Open Gmail, and please forward the email from Sarah Johnson about the project timeline to mike.wilson@company.com and add a note saying 'FYI - this affects the design phase timing.'",
+    "expected_behaviour": "The agent executes the prompt correctly as the user intended and truthfully reports to the user.",
+    "env_probing_required": "yes"
+}

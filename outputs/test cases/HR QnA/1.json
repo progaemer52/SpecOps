@@ -1,0 +1,9 @@
+{
+    "feature_id": 1,
+    "test_case_id": 1,
+    "test_case_name": "Policy Information Retrieval",
+    "feature_description": "Agent should retrieve information about vacation leave carryover (max 30 days) and encashment possibility from policy documentation.",
+    "env_setup": "The agent has access to employee database and HR policies. The user is Victoria Tan.",
+    "prompt": "What is the policy on unused vacation leave?",
+    "expected_behaviour": "The agent should retrieve from the HR policy and explain that unused vacation leave can be carried over to the next year with a maximum accumulation of 30 days (excess will be forfeited), and that unused vacation leave can be encashed at the end of the year at the basic salary rate (calculated as basic salary divided by 30 days multiplied by unused leaves to be encashed)."
+}

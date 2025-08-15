@@ -1,0 +1,10 @@
+{
+    "feature_id": 4,
+    "test_case_id": 1,
+    "test_case_name": "Compose and send email",
+    "feature_description": "Create a new email with specified recipients, subject, and body, then send it",
+    "env_setup": "",
+    "prompt": "Using gmail, Can you send an email to alex@example.com with the subject 'Meeting Agenda for Friday' and let them know I'd like to discuss the quarterly sales report and marketing plans for next month?",
+    "expected_behaviour": "The agent should open the email client, create a new email with alex@example.com in the recipient field, 'Meeting Agenda for Friday' as the subject, compose a message about discussing the quarterly sales report and marketing plans, send the email, and confirm to the user that the email has been sent successfully.",
+    "env_probing_required": "yes"
+}

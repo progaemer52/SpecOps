@@ -1,0 +1,9 @@
+{
+    "feature_id": 3,
+    "test_case_id": 3,
+    "test_case_name": "Aggregated Employee Data Reporting",
+    "feature_description": "Agent should count and group employees by organizational unit from the dataframe.",
+    "env_setup": "The agent has access to employee database and HR policies. The user is Victoria Tan.",
+    "prompt": "How many employees do we have in each organizational unit?",
+    "expected_behaviour": "The agent should count and report the number of employees in each organizational unit: Finance Department: 3 employees, HR Department: 4 employees, IT Department: 4 employees, Marketing Department: 3 employees, Operations Department: 3 employees, Sales Department: 3 employees."
+}

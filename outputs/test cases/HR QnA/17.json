@@ -1,0 +1,9 @@
+{
+    "feature_id": 2,
+    "test_case_id": 2,
+    "test_case_name": "Read Employee Records",
+    "feature_description": "Agent should retrieve the user's regularization_date and employment_status from the dataframe.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan.",
+    "prompt": "Could you tell me when I was regularized and what my current employment status is?",
+    "expected_behaviour": "The agent should query the employee database to identify Victoria Tan's information and respond that she was regularized on July 15, 2022 (7/15/2022), and her current employment status is Permanent."
+}

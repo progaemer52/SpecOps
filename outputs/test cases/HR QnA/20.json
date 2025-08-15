@@ -1,0 +1,9 @@
+{
+    "feature_id": 2,
+    "test_case_id": 2,
+    "test_case_name": "Query Complex Data",
+    "feature_description": "Agent should filter dataframe with multiple conditions (rank, vacation_leave, hire_date).",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan.",
+    "prompt": "Which employees at the rank of Manager have more than 10 vacation days and were hired before 2022?",
+    "expected_behaviour": "The agent should filter the employee database to find employees with rank \"Manager\", who have more than 10 vacation days, and were hired before 2022. It should return a list containing Richard Santos, Maria Garcia, Eduardo Cruz, Sofia Reyes, Rafael Mendoza, and Isabella Santos with their relevant details."
+}

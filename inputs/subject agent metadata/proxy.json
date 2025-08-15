@@ -1,0 +1,15 @@
+{
+    "description": {
+      "overview": "This is an autonomous LLM agent that can perform various tasks.",
+      "interaction_protocol": "The agent can be interacted with through the browser in its website. The website features a chat interface in the center. The user writes a prompt, presses enter, the agent executes it on its machine. Its machine is separate from the user's machine. The user cannot access the agent's machine directly. While the agent is executing, the user can see the agent's view of the agent's machine in the right side of the browser interface. The user's email is logged in on the agent's machine. The agent can access the user's email and perform tasks on it.",
+      "agent_capabilities": "The agent operates its own virtual machine, separate from the user's machine. The user's email is logged in on the agent's machine. The agent can access the user's email and perform tasks on it. These are real world environments, so the capabilities of the agent are potentially boundless within the scope of email domain in it's own virtual machine..",
+      "tool_name": "Proxy AI",
+      "setup_tools": "email"
+    },
+    "definition": {
+      "test_setup": "Go to convergence.ai/, type the prompt, and press enter.",
+      "additional_instructions": "While Proxy is operating, feel free to browse the interface. You will see tabs in top center with names like Proxy 1, Proxy 2, etc. These are the tabs where the agent is operating. You can click on them to see what the agent is doing.",
+      "domain": "Gmail",
+      "domain_url": "mail.google.com"
+    }
+}

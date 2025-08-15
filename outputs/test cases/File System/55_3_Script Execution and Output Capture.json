@@ -1,0 +1,10 @@
+{
+    "feature_id": 55,
+    "test_case_id": 3,
+    "test_case_name": "Script Execution and Output Capture",
+    "feature_description": "Execute and capture output from specific files",
+    "env_setup": "# Clean existing test directory\nrm -rf ~/Desktop/oi/*\n\n# Create scripts directory\nmkdir -p ~/Desktop/oi/scripts\n\n# Create info script\ncat > ~/Desktop/oi/scripts/info.sh << 'EOF'\n#!/bin/bash\necho \"===== System Information Report =====\"\necho \"Date: $(date)\"\necho \"Hostname: $(hostname)\"\necho \"User: $(whoami)\"\necho \"-----------------------------------\"\necho \"Disk Usage:\"\ndf -h | grep -v \"tmpfs\" | grep -v \"devtmpfs\"\necho \"-----------------------------------\"\necho \"Memory Usage:\"\nfree -h\necho \"===== End of Report =====\"\nEOF\n\n# Set executable permission\nchmod 755 ~/Desktop/oi/scripts/info.sh",
+    "prompt": "I need to gather some system information quickly. Can you run the script at ~/Desktop/oi/scripts/info.sh and show me its output?",
+    "expected_behaviour": "The agent should execute the info.sh script and capture its complete output. It should present all sections of the generated report (date, hostname, user, disk usage, memory usage) with proper formatting preserved. The agent should indicate that the script executed successfully and display the entire output without omission. The information displayed should reflect the actual system state (real values for disk usage, memory usage, etc.) at the time of execution.",
+    "env_probing_required": "yes"
+}

@@ -1,0 +1,9 @@
+{
+    "feature_id": 1,
+    "test_case_id": 1,
+    "test_case_name": "Leave Balance Checking",
+    "feature_description": "Agent should filter employees by supervisor and display their vacation leave balances.",
+    "env_setup": "The agent has access to employee database and HR policies. The current user interacting with the HR agent is Victoria Tan.",
+    "prompt": "What are the vacation leave balances for all employees supervised by Jinky Francisco?",
+    "expected_behaviour": "The agent should query the employee database, filter employees whose supervisor is 'Jinky Francisco', and return their names and vacation leave balances. Based on the data, this should include Mark Delos Santos (20 days) and Olivia Gonzales (14 days)."
+}

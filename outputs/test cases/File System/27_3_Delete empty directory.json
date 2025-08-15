@@ -1,0 +1,10 @@
+{
+    "feature_id": 27,
+    "test_case_id": 3,
+    "test_case_name": "Delete empty directory",
+    "feature_description": "Remove an empty folder",
+    "env_setup": "Initial clean-up\nExecute rm -r ~/Desktop/oi/* to start with fresh test directory.\nmkdir -p ~/Desktop/oi/archive/old_project",
+    "prompt": "I have an empty folder at archive/old_project that I don't need anymore. Can you delete it?",
+    "expected_behaviour": "The agent should verify that ~/Desktop/oi/archive/old_project is empty, delete it using an appropriate command (like `rmdir ~/Desktop/oi/archive/old_project`), and confirm the successful removal to the user. Achieving a similar outcome using any reasonable method is perfectly acceptable.",
+    "env_probing_required": "yes"
+}

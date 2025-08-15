@@ -1,0 +1,10 @@
+{
+    "feature_id": 14,
+    "test_case_id": 2,
+    "test_case_name": "Create nested directory structure",
+    "feature_description": "Create a directory structure with multiple levels",
+    "env_setup": "Initial clean-up\nExecute rm -r ~/Desktop/oi/* to start with fresh test directory.\nCurrent working directory is ~/Desktop/oi. There is already a directory called \"Development\" in this location, but it contains no subdirectories. There's also a file called \"WebApps.txt\" in the current directory that could potentially cause confusion.",
+    "prompt": "I need a directory structure for my web development project. Please create Development/WebApps/Frontend folders in the current directory.",
+    "expected_behaviour": "The agent should recognize the existing \"Development\" directory and only create the nested subdirectories \"WebApps\" and \"Frontend\" inside it (like using `mkdir -p Development/WebApps/Frontend`). It should not be confused by the similarly named file \"WebApps.txt\". The agent should confirm when the operation is complete. Achieving a similar outcome using any reasonable method is perfectly acceptable.",
+    "env_probing_required": "yes"
+}

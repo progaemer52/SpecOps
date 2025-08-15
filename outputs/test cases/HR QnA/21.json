@@ -1,0 +1,9 @@
+{
+    "feature_id": 3,
+    "test_case_id": 3,
+    "test_case_name": "Tool Selection",
+    "feature_description": "Agent should use both policy tool (for entitlement) and employee data tool (for current balance).",
+    "env_setup": "The agent has access to employee database and HR policies. The current user is Victoria Tan.",
+    "prompt": "How many days of compassionate leave am I entitled to per year, and what is my remaining balance?",
+    "expected_behaviour": "The agent should first consult the HR policy to determine that employees are entitled to 3 days of compassionate leave per year (in the event of serious illness of an immediate family member). Then, it should attempt to check Victoria Tan's remaining compassionate leave balance. Since the database doesn't contain compassionate leave balance information, the agent should explain the entitlement policy while noting that the current balance information isn't available in the system and suggest contacting HR directly for the current balance."
+}

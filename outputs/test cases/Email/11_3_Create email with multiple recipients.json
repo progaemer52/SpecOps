@@ -1,0 +1,10 @@
+{
+    "feature_id": 11,
+    "test_case_id": 3,
+    "test_case_name": "Create email with multiple recipients",
+    "feature_description": "Send to primary, CC, and BCC recipients",
+    "env_setup": "",
+    "prompt": "Go to Gmail. Send an email to team@mycompany.com, CC my manager sarah.jones@mycompany.com, and BCC the restaurant at reservations@italianplace.com. Use the subject 'Team Lunch Next Wednesday'. In the email, invite everyone to a team lunch at The Italian Place on Wednesday at 12:30 PM, mention that the reservation is for 10 people, and ask if anyone has dietary restrictions they should inform me about by Monday.",
+    "expected_behaviour": "The agent should open Gmail and create a new message, add team@mycompany.com as the primary recipient, add sarah.jones@mycompany.com to the CC field, add reservations@italianplace.com to the BCC field, set the subject to 'Team Lunch Next Wednesday', compose an email body with the lunch invitation details, include the request for dietary restrictions, send the email, and confirm to the user that the email has been sent successfully.",
+    "env_probing_required": "yes"
+}
