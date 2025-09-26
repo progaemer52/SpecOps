@@ -1,0 +1,5 @@
+# test details
+We are testing the tool <tool_name> on the feature <feature_name>. <feature_description>
+We start with the environment setup as follows. This is the pre-existing setup, before the agent even started executing: <environment_setup>.
+With the setup ready, the agent is turned on. The user prompts it "<prompt>". The expected behavior is <expected_behavior>.
+Current date: {cur_date}, current time: {cur_time}.
