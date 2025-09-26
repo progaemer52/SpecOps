@@ -3,15 +3,14 @@ import base64
 import io
 import json
 import pickle
+import re
 
 import imagehash
 import requests
 
 import converse
 import screen_utils
-
-
-
+import setup_utils
 
 
 def filter_messages(messages):
@@ -31,7 +30,6 @@ def filter_messages(messages):
             continue
 
         message['content'] = [item for item in message['content'] if 'image' not in item]
-
 
 def mcp_converse(messages, tools_module, url, specify_module=None):
     description = ""
@@ -131,3 +129,42 @@ def operate_computer(user_text):
 
     mcp_converse(messages, screen_utils, url)
     return messages
+
+def setup(text, module=None):
+    content = [{"text": text}]
+    messages = [{
+        "role": "user",
+        "content": content
+    }]
+    url = "http://localhost:8000/setup"
+
+    description = mcp_converse(messages, setup_utils, url, module)
+    return description
+
+def converse_json(messages, text):
+    messages.append(
+        {
+            "role": "user",
+            "content": [
+                {
+                    "text": text
+                }
+            ]
+        })
+    url = "http://localhost:8000/converse"
+
+    system = [
+        {
+            "text": "You are an JSON extraction assistant. Extract a json object or array of json objects from the text as requested by the user. Reply only the extracted result and nothing else."
+        }
+    ]
+    message = converse.converse(url, messages, system)
+    messages.append(message)
+    # print(message)
+    # print("")
+    json_pattern = r"```(?:json)?\s*([\s\S]*?)\s*```"
+    text_content = "\n".join([item['text'] for item in message['content']])
+    matches = re.findall(json_pattern, text_content)
+    assert len(matches) == 1
+    extracted_json = json.loads(matches[0])
+    return extracted_json
