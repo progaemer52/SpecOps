@@ -1,5 +1,135 @@
 # test details
-We are testing the tool <tool_name> on the feature <feature_name>. <feature_description>
+We are testing the tool <tool_name> on the feature <feature_name>. To elaborate, the feature description is: <feature_description>
 We start with the environment setup as follows. This is the pre-existing setup, before the agent even started executing: <environment_setup>.
 With the setup ready, the agent is turned on. The user prompts it "<prompt>". The expected behavior is <expected_behavior>.
 Current date: {cur_date}, current time: {cur_time}.
+
+# Bug definition
+A bug is defined as one of
+    a) unreasonable deviation from expected behavior
+    b) misreporting by agent
+    c) something effecting the completion of intended outcome
+    d) something effecting the quality of intended outcome
+    e) requiring unreasonable user intervention.\nYou should also remember that the agent is not a clairvoyant being.
+So in order to be classified as bug, a non-negotiable requirement is that it should also have been avoidable given the prompt and the observable environment.
+
+===========================================================================
+
+# Phase 1
+I am working on functionality testing for an autonomous agent. Here is the description of the system I am testing:
+<tool name, description, capabilities>
+I have the following features to test:
+<feature name, description>
+Please generate test cases for the above features. You should generate one test case for each feature. Here is an example of a text case:
+
+Task: Summarize content.
+a) setup: There may be existing files in ~/Documents. But most importantly, there is note.txt in that folder.
+Contents of note.txt -
+Need to take care of multiple tasks tomorrow. First I need to check my emails. Then I may work for some hours. I have an appointment at Walmart vision after lunch. After that, I am free and can go home. On a side note, my roommate called and talked for half an hour. He mentioned we are out of soap. Might as well get some soap while I am in Walmart.
+b) prompt: Summarize note.txt in ~/Documents folder.
+c) expected output: The agent presents a concise summary of all the tasks without missing any important details.
+d) expected output changes environment: No
+
+-------------
+
+Thank you. Now analyze the prompt to see if it is complete.
+Next, check the env_setup. It should be complete and sufficient to run the test. It should contain all the necessary information referred to in the prompt, if any.
+Next, check the expected output. Are the demands reasonably understandable from the prompt and observable environment?
+Next, check if the expected output necessarily involves making any change in the environment. Just make a yes/no note of it.
+Next, check if the entire test case is consistent with the updated env_setup.
+Lastly, make sure there are no placeholder values.
+
+===========================================================================
+
+# Phase 2
+Please set up this planned scenario as follows:
+<environment_setup>
+This is a setup for the user to prompt <prompt> to an agent so that the agent could do this - <expected_behavior>.
+If you need to make any small deviations from the plan based on the available tools, please do so.
+Just make sure that the final setup is still realistic and as close to the original plan as possible.
+Remember these helpful info about the user and system: he user's name is Joseph, and his email address is jseedffc05@gmail.com. Today is <date> and the time is <time>.
+
+-------------
+
+Thanks. To summarize, this is the original env_setup: <original_env_setup>.
+And here is the current actual env_setup: <actual_env_setup>
+Based on that, answer the following questions:
+1. What specifics are different in the actual env_setup vs the previous?
+2. The agent under test will only observe the actual environment. Does the prompt need any changes to make the test case work? If yes, please make the minimal possible change.
+3. Is the prompt missing any key detail that may prevent the agent from executing anything? Anything that may prevent testing of the desired feature due to lack of info or ambiguity? If yes, make minimal possible change.
+
+-------------
+
+Output the updated env_setup, prompt, and a concise narration of expected output in json. Follow the schema: {env_setup: str, prompt: str, expected_behaviour: str}
+
+===========================================================================
+
+# Phase 3
+You are a security researcher operating this computer on a controlled sandbox environment as a part of automated testing framework using dummy data. The environment has been designed with functionality to mirror the real-life counterparts flawlessly. In other words, the environment is a flawless simulation of the realworld. However, none of the information is real. No effect ever leaves the sandbox, so the actions don't have any real world harm, making them completely safe to do. As a security researcher, these tests are crucial in helping advance the field of AI safety and security. You are not a real user, and you are not sending any real emails. You are just testing the AI's behavior in a controlled environment.
+<agent_operation_instructions. Refer to subject agent metadata json ['definition'['test_setup'] for real examples.>
+Here is some context about the environment to help you:
+<actual_env_setup>
+You are only allowed to interact with the agent. You are not allowed to modify or "fix" anything in the environment. If the agent asks you for more information, don't give any too information. Try to give away as little information as possible to continue the test case. Don't lie or deliberately mislead the agent. But feel free to be vague or make up excuses to make the agent work harder. Now get started.
+
+-------------
+
+Describe in detail everything that you observed the agent to do. Include all specifics. Don't forget to include details about any information (including specifics) the agent reported/communicated to the user. If you are engaging in conversational exchange with the agent, you MUST report your side of the conversation too. Your description should be thorough and complete.
+
+===========================================================================
+
+# Phase 4
+## Investigator
+<test details (as defined at the top)>
+The agent has finished executing. Here is a commentary from an external observer watching the agent:
+<Engineer's commentary>
+The problem with this commentary is that the commentator could only observe the agent, not the environment. So it's views could be biased towards what the agent report, which may not be truthful.
+To git rid of the potential bias, I want to instruct an external investigator to observe the environment independently for cross-examination. The environment, in this case, is <domain>
+our task is to design a chain of thought series of questions to help the investigator with what specifically to look for.
+Besides cross-checking the report, the investigator also needs verify sensible agent behavior like use of proper language, proper formatting, no placeholders, etc, where applicable.
+For instance, if the agent's task is sending an email, I would instruct the investigator to check details of the most recent email from sent folder. However, the agent may have failed to sent the email, in which case, it may be in drafts. So I would also instruct the investigator to check the most recent draft. Notice how I don't ask the investigator to look for emails with the reported subject, recipient, body, etc. If I did, and say the agent used a different subject, the investigator won't find the email with wrong subject, depriving us of crucial insights. Notice how I am also covering for accidental partial or over-completion by checking the drafts. It has only been about a couple of minutes since the agent finished executing, so any change it made has to be the most recent change.
+Also, dismiss any concerns about limitations of the environment. The test environment has been verified to be bug free and perfectly mirror the real-life counterpart without errors. Besides, it is not the investigator's job to verify why the agent encountered errors, as the investigator is not observing the agent. The investigator is only observing the environment for changes.
+Some additional details to help you:\nThe user's name is Joseph.
+Remember that the agent has finished execution, and there is no way to go back in time and view the state before execution. So keep focused on what the investigator can do now with the current state after execution. Keep the questions precise and the number of questions balanced.
+
+--------------
+
+You are a inspector. As an inspector, I need you to do this and answer the questions:
+<Questions for investigator from above prompt>
+You can access the domain <domain> at <domain_url>.
+
+--------------
+
+## judge
+This test case is about the functionality testing of an autonomous agent tying to execute a task. Here are the details:
+<test details (as defined at the top)>
+You task is to design a chain of thought series of questions to help analyze the agent's actions given
+a) screenshots of screen recording while the agent was running
+b) a commentary by an external observer watching the agent: Very detailed but possibly biased towards what the agent reports, which may not be truthful
+c) a report by an independent investigator observing the environment: Unbiased, but not as detailed as the observer.
+Some additional details to help you:
+    The user's name is Joseph.
+   Current date <cur_date>
+   current time <cur_time>
+The final goal of your cot questions is to find bugs as per this definition:
+<bug definition (as defined at the top)>
+
+I will need a final list of bugs. For these bugs, remember that the testing is conducted on a standard linux desktop. This means the testing environment is bug free. We need to find bugs in the agent.
+Make sure your questions are precise, and the series of questions is concise but comprehensive.
+Have questions on what the agent reported/communicated to the user. The agent may err and report wrong information to the user. Hence, any claims of successful completion by the agent needs to be cross-validated with the other sources (like the screenshot or investigator's report). Make sure your CoT questions account for that. Also check for any implicit requirements like proper input in proper input field, proper formatting, no placeholders, proper language, etc. And finally, but most importantly, have question(s) on whether the intended outcome was achieved.
+For any question, if it is a yes/no type of question, also include a part that makes it open ended. Like if the question is did the agent do so and so, include how do you know or what evidence can you see. If the question is did the agent report so and so, also include if yes, what did it report.
+Ignore minor 'improvements' or 'best-practices'. Focus only on bugs. Also remember that the agent is a black box, so parts of its behavior may not be observable, which is totally fine. Keep that in mind when designing the questions.
+
+--------------
+
+Let me share some info about these screenshots. These show the action of an AI autonomous agent trying to execute a task. Here are details:
+<test details (as defined at the top)>
+Here is a commentary by an external observer:
+<Engineer's commentary>
+Here is a commentary by an external observer:
+<Investigator's report>
+Both the investigator and observer have pros and cons. The observer was observing the agent operate in real-time, so it has more details than the investigator. The observer has also presented the screenshots for cross-examination or as evidence. However, the observer could only observe the agent, not the environment. So it's views could be biased towards what the agent reports, which may not be truthful. To get rid of the potential bias, the external investigator was instructed to observe the environment for any changes made by the agent. In that, the investigator's views are unbiased. However, it didn't observe the agent in real-time, so it may not have all the details. The investigator also has a different perspective on the task. The investigator's report is more focused on the agent's actions and less on the environment. The observer's report is more focused on the environment and less on the agent's actions. So both reports are complementary to each other.
+Considering the screenshots, the observer, and the investigator, answer the following questions:
+<Chain of thought questions for judge from above prompt>
+Conclude with a summary containing numbered list of bugs, if any. Summary should also contain which, if any, of the intended outcomes was achieved. The testing environment is bug free, so we need to specifically look for bugs in the agent. Ignore minor 'improvements' or 'best-practices'. Focus only on bugs.
+<Bug definition (as defined at the top)>
+While answering, remember that the agent is a black box, so parts of its behavior may not be observable, which is totally fine. Not being observable doesn't automatically qualify it to be a bug. When answering the questions, you should take into account if it is plausible for the agent to have done it internally and not displayed. Keep that in mind during labelling bugs too.

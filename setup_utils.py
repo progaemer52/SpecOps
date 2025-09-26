@@ -1,14 +1,11 @@
 import datetime
+import os
+import shlex
 import smtplib
 import ssl
-from email.message import EmailMessage
-import imaplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-import time
-import os
 import subprocess
-import shlex
+import time
+from email.message import EmailMessage
 
 from dotenv import load_dotenv
 

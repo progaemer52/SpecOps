@@ -1,0 +1,1 @@
+We outline our used prompts here. The available tools are supplied with MCP protocol, not in conjunction with the prompt string itself.

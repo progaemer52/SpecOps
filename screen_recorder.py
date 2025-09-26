@@ -1,11 +1,9 @@
-import subprocess
-import signal
-import sys
-import os
-import time
-import re
 import atexit
+import os
 import re
+import signal
+import subprocess
+import time
 
 from tray_indicator import Icon
 

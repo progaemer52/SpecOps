@@ -6,9 +6,7 @@ import pickle
 
 import imagehash
 import requests
-import screen_utils
 from PIL import Image
-from screen_utils import screenshot_primary_monitor
 
 
 def generate_report(texts, image_dir, offset=0, limit=20):
